@@ -43,6 +43,7 @@ const answers = {
   price: '剪髮 NT$100–500；冷燙 NT$1,200 起；女士溫熱塑燙依髮長為 NT$3,000／3,500／4,000；染髮依髮長 NT$1,700 起。漂髮退色、挑染與特殊設計需看髮況，由真人報價。完整項目請看頁面的「店內參考價目」。',
   hours: '店內不是 24 小時現場營業。我可以 24 小時接收需求；一般可約 05:00–23:30，臨時預約請至少提前 1 小時。其他時段也能提出，但需由設計師確認。',
   alice: '2號 Alice 擅長頭皮養護、剪、燙、染與整頭漂染，風格以居家好整理、簡單俐落及目標明確的個性造型為主，也接受新客。空檔與指定價格仍需本人確認。',
+  tina: '7號 Tina 擅長頭皮養護、剪、燙、染，風格以簡單日常、回家好整理的基礎造型為主。服務時間為 11:00–18:00，無固定休假日並接受新客；實際空檔與指定價格仍需本人確認。',
   deposit: '剪髮訂金 NT$100；燙、染、漂訂金 NT$500。提前一天改期可保留，最多 2 次；當天取消、改期或遲到 15 分鐘，訂金不退。生病、車禍等突發狀況由店員個別處理。',
   booking: '請到頁面的「提出你的預約需求」填寫姓名、電話、服務、設計師、日期與時間。染燙漂還需提供髮長、染漂紀錄及照片。送出後會產生 LINE 摘要，店家確認後才成立預約。',
   human: '可直接聯絡官方 LINE：@147cfkvk，或電話 03-955-6520。價格、空檔、髮況、客訴、退款與特殊情況都會交由真人處理。'
@@ -72,7 +73,8 @@ function addBubble(text, type) {
 function classifyQuestion(text) {
   if (/價|多少|費用|剪|燙|染|漂|護髮|頭皮/.test(text)) return 'price';
   if (/時間|營業|幾點|臨時|24/.test(text)) return 'hours';
-  if (/alice|愛麗絲|2號|設計師/.test(text.toLowerCase())) return 'alice';
+  if (/tina|緹娜|7號/.test(text.toLowerCase())) return 'tina';
+  if (/alice|愛麗絲|2號/.test(text.toLowerCase())) return 'alice';
   if (/訂金|取消|改期|遲到|退款/.test(text)) return 'deposit';
   if (/預約|空檔|有空/.test(text)) return 'booking';
   if (/真人|電話|店員|客訴|重做/.test(text)) return 'human';

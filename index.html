@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>.stylists{align-items:start}.stylist-list{display:grid;gap:18px}</style>
 </head>
 <body>
   <header class="site-header">
@@ -67,16 +68,22 @@
         <article class="price-card"><h3>染髮</h3><dl><div><dt>補髮根 5cm 內</dt><dd>NT$1,700</dd></div><div><dt>男短髮 15cm 內</dt><dd>NT$2,000</dd></div><div><dt>耳下</dt><dd>NT$2,300</dd></div><div><dt>鎖骨</dt><dd>NT$2,500</dd></div><div><dt>過肩或髮量多</dt><dd>NT$2,700 起</dd></div></dl><p>漂髮退色與挑染依髮況討論報價。</p></article>
         <article class="price-card"><h3>洗髮／造型</h3><dl><div><dt>基礎洗髮</dt><dd>NT$300</dd></div><div><dt>噴頭皮水</dt><dd>加收 NT$50</dd></div><div><dt>接髮／補色／自染後洗髮</dt><dd>加收 NT$150</dd></div><div><dt>過腰洗髮</dt><dd>加收 NT$150</dd></div><div><dt>電棒／基礎造型編髮</dt><dd>NT$300</dd></div></dl></article>
         <article class="price-card"><h3>頭皮養護</h3><dl><div><dt>深層角質淨化</dt><dd>NT$700</dd></div><div><dt>水飛梭頭皮淨化</dt><dd>NT$700</dd></div><div><dt>高週波殺菌保養</dt><dd>NT$700</dd></div><div><dt>三合一頭皮套餐</dt><dd>NT$1,680</dd></div></dl></article>
-        <article class="price-card wide"><h3>護髮</h3><dl><div><dt>台灣鉑金蒸氣柔順護髮</dt><dd>NT$1,000</dd></div><div><dt>日本 DeLamo 2 劑式</dt><dd>NT$1,300</dd></div><div><dt>日本 DeLamo 4 劑式</dt><dd>NT$1,800</dd></div><div><dt>黑曜光感護髮</dt><dd>NT$1,800／2,100／2,400／2,700</dd></div></dl></article>
+        <article class="price-card wide"><h3>護髮</h3><dl><div><dt>台灣鉑金慕氣柔順護髮</dt><dd>NT$1,000</dd></div><div><dt>日本 DeLamo 2 劑式</dt><dd>NT$1,300</dd></div><div><dt>日本 DeLamo 4 劑式</dt><dd>NT$1,800</dd></div><div><dt>黑曜光感護髮</dt><dd>NT$1,800／2,100／2,400／2,700</dd></div></dl></article>
       </div>
     </section>
 
     <section id="stylists" class="section stylists">
-      <div><p class="eyebrow">MEET YOUR STYLIST</p><h2>找到適合你的設計師</h2><p class="muted">目前共有 5 位設計師。其他設計師的詳細資料整理中，仍可在預約時指定。</p></div>
-      <article class="stylist-card">
-        <div class="stylist-number">02</div>
-        <div><p class="eyebrow">STYLIST</p><h3>Alice</h3><p>擅長頭皮養護、剪、燙、染及整頭漂染。風格以居家好整理、簡單俐落與目標明確的個性造型為主。</p><div class="tags"><span>頭皮養護</span><span>剪燙染</span><span>整頭漂染</span><span>接受新客</span></div><a class="text-link" href="https://line.me/ti/p/~royalhairsalon556007" target="_blank" rel="noreferrer">LINE：royalhairsalon556007 <span>↗</span></a></div>
-      </article>
+      <div><p class="eyebrow">MEET YOUR STYLIST</p><h2>找到適合你的設計師</h2><p class="muted">目前共有 5 位設計師，Alice 與 Tina 的資料已完成建檔；其他設計師的詳細資料整理中，仍可在預約時指定。</p></div>
+      <div class="stylist-list">
+        <article class="stylist-card">
+          <div class="stylist-number">02</div>
+          <div><p class="eyebrow">STYLIST</p><h3>Alice</h3><p>擅長頭皮養護、剪、燙、染及整頭漂染。風格以居家好整理、簡單俐落與目標明確的個性造型為主。</p><div class="tags"><span>頭皮養護</span><span>剪燙染</span><span>整頭漂染</span><span>接受新客</span></div><a class="text-link" href="https://line.me/ti/p/~royalhairsalon556007" target="_blank" rel="noreferrer">LINE：royalhairsalon556007 <span>↗</span></a></div>
+        </article>
+        <article class="stylist-card">
+          <div class="stylist-number">07</div>
+          <div><p class="eyebrow">STYLIST</p><h3>Tina</h3><p>擅長頭皮養護、剪、燙、染。風格以簡單日常、回家好整理的基礎造型為主。服務時間 11:00–18:00，無固定休假日。</p><div class="tags"><span>頭皮養護</span><span>剪燙染</span><span>日常好整理</span><span>接受新客</span></div><a class="text-link" href="https://line.me/ti/p/~Line0973566043" target="_blank" rel="noreferrer">LINE：Line0973566043 <span>↗</span></a></div>
+        </article>
+      </div>
     </section>
 
     <section id="booking" class="section booking">
@@ -126,8 +133,8 @@
   <button class="assistant-fab assistant-trigger" type="button" aria-haspopup="dialog"><span>AI</span> 店務小編</button>
   <aside id="assistant" class="assistant" role="dialog" aria-modal="true" aria-labelledby="assistantTitle" aria-hidden="true">
     <div class="assistant-head"><div><p>24 小時接收需求</p><h2 id="assistantTitle">皇家 AI 店務小編</h2></div><button id="closeAssistant" type="button" aria-label="關閉 AI 店務小編">×</button></div>
-    <div id="chatLog" class="chat-log" aria-live="polite"><div class="bubble bot">您好🙂我可以先協助查詢價格、營業方式、Alice 的服務、訂金規則，或帶您開始預約。預約與最終報價仍由真人確認。</div></div>
-    <div class="quick-actions" aria-label="快速問題"><button data-question="price">查詢價格</button><button data-question="hours">營業與時段</button><button data-question="alice">介紹 Alice</button><button data-question="deposit">訂金規則</button><button data-question="booking">我要預約</button><button data-question="human">找真人</button></div>
+    <div id="chatLog" class="chat-log" aria-live="polite"><div class="bubble bot">您好🙂我可以先協助查詢價格、營業方式、Alice 或 Tina 的服務、訂金規則，或帶您開始預約。預約與最終報價仍由真人確認。</div></div>
+    <div class="quick-actions" aria-label="快速問題"><button data-question="price">查詢價格</button><button data-question="hours">營業與時段</button><button data-question="alice">介紹 Alice</button><button data-question="tina">介紹 Tina</button><button data-question="deposit">訂金規則</button><button data-question="booking">我要預約</button><button data-question="human">找真人</button></div>
     <form id="chatForm" class="chat-form"><label class="sr-only" for="chatInput">輸入問題</label><input id="chatInput" autocomplete="off" placeholder="例如：染髮多少錢？"><button type="submit">送出</button></form>
   </aside>
   <div id="overlay" class="overlay"></div>
