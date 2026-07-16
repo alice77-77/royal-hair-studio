@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>皇家造型美髮｜羅東預約制沙龍</title>
-  <meta name="description" content="皇家造型美髮：羅東24小時預約制沙龍，提供洗、剪、燙、染、護與專業洗護品。" />
+  <meta name="description" content="皇家造型美髮位於羅東民權路。AI 店務小編 24 小時接收需求，提供洗、剪、燙、染、漂、護髮與頭皮養護，預約需由設計師確認。" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
@@ -12,42 +12,125 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="#top"><span>ROYAL</span>皇家造型美髮</a>
-    <nav><a href="#services">服務項目</a><a href="#shop">洗護選品</a><a href="#visit">來店資訊</a></nav>
-    <a class="button button-dark small" href="#booking">立即預約</a>
+    <a class="logo" href="#top"><span>ROYAL</span>皇家造型</a>
+    <nav aria-label="主要選單">
+      <a href="#services">服務</a>
+      <a href="#prices">價目</a>
+      <a href="#stylists">設計師</a>
+      <a href="#faq">常見問題</a>
+    </nav>
+    <a class="button button-dark small" href="#booking">提出預約</a>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">LUODONG · BY APPOINTMENT</p>
+        <p class="eyebrow">ROYAL HAIR SALON · LUODONG</p>
         <h1>留一段時間，<br>給更像自己的你。</h1>
-        <p class="intro">從日常洗剪到造型染燙，讓髮型在羅東的步調裡，自然地成為你的風格。</p>
-        <div class="actions"><a class="button button-dark" href="#booking">線上預約</a><a class="text-link" href="#shop">選購洗護品 <span>→</span></a></div>
+        <p class="intro">從日常洗剪到造型染燙，讓專業設計回到舒服、簡單、好整理的生活。</p>
+        <div class="actions">
+          <a class="button button-dark" href="#booking">開始預約</a>
+          <button class="text-link assistant-trigger" type="button">詢問 AI 店務小編 <span>→</span></button>
+        </div>
       </div>
-      <div class="hero-art" aria-label="抽象髮絲藝術圖"><div class="sun"></div><div class="line line-1"></div><div class="line line-2"></div><div class="line line-3"></div><p>YOUR HAIR,<br>YOUR STORY.</p></div>
+      <div class="hero-art" aria-label="皇家造型抽象髮絲圖形">
+        <div class="sun"></div><div class="line line-1"></div><div class="line line-2"></div><div class="line line-3"></div>
+        <p>YOUR HAIR,<br>YOUR STORY.</p>
+      </div>
     </section>
 
-    <section class="feature-strip"><div><strong>5 位專業設計師</strong><span>選擇最懂你的風格夥伴</span></div><div><strong>24 小時預約制</strong><span>依你的生活節奏安排美好</span></div><div><strong>羅東民權路</strong><span>逛街、夜市前後都剛剛好</span></div></section>
-
-    <section id="services" class="section services"><p class="eyebrow">OUR SERVICES</p><h2>把想要的改變，交給細緻的手感。</h2><div class="service-grid">
-      <article><span>01</span><h3>洗 · 剪</h3><p>舒壓洗髮與量身修剪，整理出好維持的日常輪廓。</p></article>
-      <article><span>02</span><h3>燙 · 染</h3><p>從諮詢、髮況評估到完成造型，讓改變更安心。</p></article>
-      <article><span>03</span><h3>深層護髮</h3><p>依受損程度選擇護理，找回髮絲柔順與光澤。</p></article>
-    </div></section>
-
-    <section id="booking" class="section booking"><div class="booking-copy"><p class="eyebrow">BOOK YOUR TIME</p><h2>預約你的專屬時段</h2><p>提交後，我們會透過 LINE 與你確認設計師、空檔與訂金資訊。預約完成才會保留時段。</p><ul><li>可選：洗、剪、燙、染、護</li><li>5 位設計師，依需求安排</li><li>需預付訂金以保留預約</li></ul></div>
-      <form id="bookingForm" class="card form-card"><label>姓名<input required name="name" placeholder="怎麼稱呼您？"></label><label>手機<input required name="phone" type="tel" placeholder="09xx-xxx-xxx"></label><div class="two-cols"><label>服務<select name="service"><option>洗髮</option><option>剪髮</option><option>燙髮</option><option>染髮</option><option>護髮</option><option>洗＋剪</option></select></label><label>設計師<select name="stylist"><option>由店家安排</option><option>設計師 1號 Mark</option><option>設計師 2號 Alice </option><option>設計師 5號 Iris </option><option>設計師 7號 Tina </option><option>設計師 8號 Lee </option></select></label></div><div class="two-cols"><label>希望日期<input required name="date" type="date"></label><label>時段<select name="time"><option>上午</option><option>下午</option><option>傍晚</option><option>晚上</option></select></label></div><label>需求備註<textarea name="note" placeholder="例如：想染的顏色、髮長、是否曾漂髮…"></textarea></label><button class="button button-dark" type="submit">送出預約需求</button><p class="form-note">送出即會開啟 LINE，由專人確認空檔及訂金方式。</p></form>
+    <section class="feature-strip" aria-label="服務特色">
+      <div><strong>AI 小編 24 小時接收需求</strong><span>店內並非全天營業，實際時段需確認</span></div>
+      <div><strong>一般可約 05:00–23:30</strong><span>臨時預約請至少提前 1 小時</span></div>
+      <div><strong>羅東民權路 159 號</strong><span>鄰近羅東鎮公所立體停車場</span></div>
     </section>
 
-    <section id="shop" class="section shop"><div class="section-heading"><div><p class="eyebrow">HAIRCARE SHOP</p><h2>把沙龍護理帶回家</h2></div><button id="cartButton" class="cart-button">購物袋 <span id="cartCount">0</span></button></div><div class="product-grid" id="productGrid"></div></section>
+    <section id="services" class="section services">
+      <p class="eyebrow">OUR SERVICES</p>
+      <h2>把想要的改變，交給細緻的手感。</h2>
+      <div class="service-grid">
+        <article><span>01</span><h3>洗 · 剪 · 造型</h3><p>從日常整理到俐落輪廓，依生活習慣找到好維持的髮型。</p></article>
+        <article><span>02</span><h3>燙 · 染 · 漂</h3><p>先了解染漂紀錄、髮況與目標，再由設計師評估適合做法。</p></article>
+        <article><span>03</span><h3>護髮 · 頭皮養護</h3><p>依受損程度與頭皮需求，選擇適合的護理與淨化方案。</p></article>
+      </div>
+    </section>
 
-    <section class="section faq"><div><p class="eyebrow">QUICK ANSWERS</p><h2>常見問題</h2></div><div class="faq-list"><details open><summary>現場可以直接服務嗎？</summary><p>歡迎直接來店詢問；若想指定設計師或避免等待，建議先完成線上預約。</p></details><details><summary>染燙前需要注意什麼？</summary><p>建議預約時告訴我們近期染燙、漂髮或頭皮敏感狀況，設計師會先評估髮況並提供建議。</p></details><details><summary>附近有停車位嗎？</summary><p>可先透過 LINE 詢問當日較方便的停車建議，我們會即時回覆。</p></details><details><summary>如何查詢價格與空檔？</summary><p>按「線上預約」留下需求，或加入 LINE：@147cfkvk，由專人為你確認。</p></details></div></section>
+    <section id="prices" class="section prices">
+      <div class="section-heading">
+        <div><p class="eyebrow">PRICE GUIDE</p><h2>店內參考價目</h2></div>
+        <p class="price-note">實際價格可能依髮長、髮量、設計需求與設計師分級調整。</p>
+      </div>
+      <div class="price-grid">
+        <article class="price-card"><h3>剪髮</h3><dl><div><dt>修瀏海</dt><dd>NT$100</dd></div><div><dt>修邊邊</dt><dd>NT$200</dd></div><div><dt>未成年</dt><dd>NT$300</dd></div><div><dt>大學生</dt><dd>NT$400</dd></div><div><dt>成人</dt><dd>NT$500</dd></div></dl></article>
+        <article class="price-card"><h3>冷燙</h3><dl><div><dt>區塊燙</dt><dd>NT$1,200 起</dd></div><div><dt>基礎冷燙</dt><dd>NT$1,500／1,800 起</dd></div><div><dt>冷燙設計</dt><dd>NT$2,000–3,000 起</dd></div></dl><p>包含渣男燙、鋼夾燙、羊毛捲、葉斯利等。</p></article>
+        <article class="price-card"><h3>溫熱塑燙</h3><dl><div><dt>女士肩上</dt><dd>NT$3,000</dd></div><div><dt>女士肩下</dt><dd>NT$3,500</dd></div><div><dt>女士肩帶下</dt><dd>NT$4,000</dd></div><div><dt>男士燙髮</dt><dd>NT$2,000–3,000 起</dd></div><div><dt>上直下捲</dt><dd>加收 NT$600</dd></div></dl></article>
+        <article class="price-card"><h3>染髮</h3><dl><div><dt>補髮根 5cm 內</dt><dd>NT$1,700</dd></div><div><dt>男短髮 15cm 內</dt><dd>NT$2,000</dd></div><div><dt>耳下</dt><dd>NT$2,300</dd></div><div><dt>鎖骨</dt><dd>NT$2,500</dd></div><div><dt>過肩或髮量多</dt><dd>NT$2,700 起</dd></div></dl><p>漂髮退色與挑染依髮況討論報價。</p></article>
+        <article class="price-card"><h3>洗髮／造型</h3><dl><div><dt>基礎洗髮</dt><dd>NT$300</dd></div><div><dt>頭皮去角質</dt><dd>加收 NT$50</dd></div><div><dt>接髮／補色／自染後洗髮</dt><dd>加收 NT$150</dd></div><div><dt>過腰洗髮</dt><dd>加收 NT$150</dd></div><div><dt>電棒／基礎造型編髮</dt><dd>NT$300</dd></div></dl></article>
+        <article class="price-card"><h3>頭皮養護</h3><dl><div><dt>深層角質淨化</dt><dd>NT$700</dd></div><div><dt>水飛梭頭皮淨化</dt><dd>NT$700</dd></div><div><dt>高週波殺菌保養</dt><dd>NT$700</dd></div><div><dt>三合一頭皮套餐</dt><dd>NT$1,680</dd></div></dl></article>
+        <article class="price-card wide"><h3>護髮</h3><dl><div><dt>台灣鉑金慕氣柔順護髮</dt><dd>NT$1,000</dd></div><div><dt>日本 DeLamo 2 劑式</dt><dd>NT$1,300</dd></div><div><dt>日本 DeLamo 4 劑式</dt><dd>NT$1,800</dd></div><div><dt>黑曜光感護髮</dt><dd>NT$1,800／2,100／2,400／2,700</dd></div></dl></article>
+      </div>
+    </section>
 
-    <section id="visit" class="visit"><div><p class="eyebrow">VISIT ROYAL</p><h2>皇家造型美髮</h2><p>宜蘭縣羅東鎮民權路159號<br>24 小時預約制</p><div class="visit-links"><a href="tel:039556520">03-955-6520</a><a href="https://line.me/R/ti/p/@147cfkvk" target="_blank" rel="noreferrer">LINE：@147cfkvk</a></div></div><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%BE%85%E6%9D%B1%E9%8E%AE%E6%B0%91%E6%AC%8A%E8%B7%AF159%E8%99%9F" target="_blank" rel="noreferrer">在地圖開啟 <span>↗</span></a></section>
+    <section id="stylists" class="section stylists">
+      <div><p class="eyebrow">MEET YOUR STYLIST</p><h2>找到適合你的設計師</h2><p class="muted">目前共有 5 位設計師。其他設計師的詳細資料整理中，仍可在預約時指定。</p></div>
+      <article class="stylist-card">
+        <div class="stylist-number">02</div>
+        <div><p class="eyebrow">STYLIST</p><h3>Alice</h3><p>擅長頭皮養護、剪、燙、染及整頭漂染。風格以居家好整理、簡單俐落與目標明確的個性造型為主。</p><div class="tags"><span>頭皮養護</span><span>剪燙染</span><span>整頭漂染</span><span>接受新客</span></div><a class="text-link" href="https://line.me/ti/p/~royalhairsalon556007" target="_blank" rel="noreferrer">LINE：royalhairsalon556007 <span>↗</span></a></div>
+      </article>
+    </section>
+
+    <section id="booking" class="section booking">
+      <div class="booking-copy">
+        <p class="eyebrow">BOOK YOUR TIME</p><h2>提出你的預約需求</h2>
+        <p>填寫後會產生一份預約摘要並開啟官方 LINE。店家確認設計師、空檔、價格及訂金後，預約才正式成立。</p>
+        <ul><li>剪髮訂金 NT$100</li><li>燙、染、漂訂金 NT$500</li><li>提前一天可改期，最多 2 次</li><li>當天取消／改期或遲到 15 分鐘，訂金不退</li></ul>
+      </div>
+      <form id="bookingForm" class="card form-card">
+        <div class="two-cols"><label>姓名<input required name="name" autocomplete="name" placeholder="怎麼稱呼您？"></label><label>手機<input required name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="09xx-xxx-xxx"></label></div>
+        <div class="two-cols"><label>服務<select required name="service" id="serviceSelect"><option value="">請選擇</option><option>洗髮</option><option>剪髮</option><option>冷燙</option><option>溫熱塑燙</option><option>染髮</option><option>漂髮／挑染</option><option>護髮</option><option>頭皮養護</option><option>基礎造型</option></select></label><label>設計師<select required name="stylist"><option>由店家安排</option><option>1號 Mark</option><option>2號 Alice</option><option>5號 Iris</option><option>7號 Tina</option><option>8號 Lee</option></select></label></div>
+        <div class="two-cols"><label>希望日期<input required name="date" type="date"></label><label>希望時間<input required name="time" type="time" step="900"></label></div>
+        <p class="field-help">一般可約 05:00–23:30；其他時段也可提出，由設計師確認。臨時預約請至少提前 1 小時。</p>
+        <fieldset id="hairCondition" class="hair-condition" hidden>
+          <legend>染燙漂髮況資料</legend>
+          <div class="two-cols"><label>目前髮長<select name="hairLength"><option value="">請選擇</option><option>耳上／男短髮</option><option>耳下</option><option>肩上</option><option>肩下／鎖骨</option><option>過肩</option><option>過腰</option></select></label><label>染漂紀錄<select name="hairHistory"><option value="">請選擇</option><option>原生髮／近期無染漂</option><option>曾染髮</option><option>曾染黑</option><option>曾漂髮</option><option>植物染／自行染髮</option><option>不確定</option></select></label></div>
+          <label>希望效果與其他需求<textarea name="hairGoal" placeholder="例如：希望霧棕色、自然捲想好整理、曾漂兩次……"></textarea></label>
+          <label class="check-label"><input type="checkbox" name="photosReady"> 我已準備目前髮況及參考照片，開啟 LINE 後會一併傳送</label>
+        </fieldset>
+        <label>其他備註<textarea name="note" placeholder="例如：第一次來店、希望安靜服務、其他需先告知的情況……"></textarea></label>
+        <label class="check-label policy-check"><input required type="checkbox" name="policy"> 我了解送出的是預約需求，需由店家確認及完成訂金後才成立。</label>
+        <button class="button button-dark" type="submit">產生摘要並開啟 LINE</button>
+        <div id="bookingResult" class="result" hidden aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div><p class="eyebrow">QUICK ANSWERS</p><h2>常見問題</h2><p class="muted">找不到答案時，可詢問右下角的 AI 店務小編。</p></div>
+      <div class="faq-list">
+        <details open><summary>你們是 24 小時營業嗎？</summary><p>不是全天候現場營業。我們採預約制；AI 店務小編可 24 小時接收需求，一般可約時段為 05:00–23:30，實際空檔需由設計師確認。</p></details>
+        <details><summary>現場可以直接服務嗎？</summary><p>門市採預約制，建議先透過官方 LINE、電話或網站提出需求，避免到店時沒有設計師可以服務。</p></details>
+        <details><summary>染燙漂前需要準備什麼？</summary><p>請準備目前髮長、染黑／漂髮／植物染／自行染髮紀錄，以及清楚的目前髮況與參考照片。</p></details>
+        <details><summary>訂金、取消與改期規則？</summary><p>剪髮訂金 NT$100；燙、染、漂訂金 NT$500。提前一天改期可保留訂金，最多 2 次；當天取消、改期或遲到 15 分鐘，訂金不退。突發狀況由店員個別處理。</p></details>
+        <details><summary>附近有停車位嗎？</summary><p>可停羅東鎮公所立體停車場，再步行前往民權路159號。</p></details>
+        <details><summary>如何確認價格與空檔？</summary><p>網站價格為參考。完成表單後，請透過官方 LINE 傳送摘要；店員會確認設計師、空檔、最終價格及訂金。</p></details>
+      </div>
+    </section>
+
+    <section id="visit" class="visit">
+      <div><p class="eyebrow">VISIT ROYAL</p><h2>皇家造型美髮沙龍</h2><p>宜蘭縣羅東鎮民權路159號<br>預約制｜一般可約 05:00–23:30</p><div class="visit-links"><a href="tel:039556520">03-955-6520</a><a href="https://line.me/R/ti/p/@147cfkvk" target="_blank" rel="noreferrer">官方 LINE：@147cfkvk</a><a href="https://www.instagram.com/royal_hair_2023/" target="_blank" rel="noreferrer">Instagram</a></div></div>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%BE%85%E6%9D%B1%E9%8E%AE%E6%B0%91%E6%AC%8A%E8%B7%AF159%E8%99%9F" target="_blank" rel="noreferrer">在地圖開啟 <span>↗</span></a>
+    </section>
   </main>
-  <footer>© 2026 皇家造型美髮 · ROYAL HAIR STUDIO</footer>
-  <aside id="cart" class="cart" aria-hidden="true"><div class="cart-head"><h3>購物袋</h3><button id="closeCart" aria-label="關閉">×</button></div><div id="cartItems" class="cart-items"><p class="empty">尚未加入商品</p></div><div class="cart-footer"><strong>總計 <span id="cartTotal">NT$0</span></strong><button id="checkout" class="button button-dark">透過 LINE 訂購</button></div></aside><div id="overlay" class="overlay"></div>
+
+  <footer>© 2026 皇家造型美髮 · ROYAL HAIR SALON</footer>
+
+  <button class="assistant-fab assistant-trigger" type="button" aria-haspopup="dialog"><span>AI</span> 店務小編</button>
+  <aside id="assistant" class="assistant" role="dialog" aria-modal="true" aria-labelledby="assistantTitle" aria-hidden="true">
+    <div class="assistant-head"><div><p>24 小時接收需求</p><h2 id="assistantTitle">皇家 AI 店務小編</h2></div><button id="closeAssistant" type="button" aria-label="關閉 AI 店務小編">×</button></div>
+    <div id="chatLog" class="chat-log" aria-live="polite"><div class="bubble bot">您好🙂我可以先協助查詢價格、營業方式、Alice 的服務、訂金規則，或帶您開始預約。預約與最終報價仍由真人確認。</div></div>
+    <div class="quick-actions" aria-label="快速問題"><button data-question="price">查詢價格</button><button data-question="hours">營業與時段</button><button data-question="alice">介紹 Alice</button><button data-question="deposit">訂金規則</button><button data-question="booking">我要預約</button><button data-question="human">找真人</button></div>
+    <form id="chatForm" class="chat-form"><label class="sr-only" for="chatInput">輸入問題</label><input id="chatInput" autocomplete="off" placeholder="例如：染髮多少錢？"><button type="submit">送出</button></form>
+  </aside>
+  <div id="overlay" class="overlay"></div>
   <script src="script.js"></script>
 </body>
 </html>
