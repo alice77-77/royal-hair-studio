@@ -40,6 +40,7 @@ const chatForm = document.querySelector('#chatForm');
 const chatInput = document.querySelector('#chatInput');
 
 const answers = {
+  promotion: '目前優惠包括：不指定設計師學生剪 NT$200、成人剪 NT$300、洗髮 NT$300；商業單色染髮套餐短髮 NT$2,099、肩上 NT$2,299、肩下 NT$2,499、及腰 NT$2,699，若需去色加收 NT$1,000；燙髮五重奏肩上 NT$3,099、肩下 NT$3,599、長髮 NT$4,099，髮量多或兩種燙髮技術酌收 NT$1,000。染燙套餐為週一至週五預約限定，適用資格、髮況與最終價格仍需店家確認。',
   price: '剪髮 NT$100–500；冷燙 NT$1,200 起；女士溫熱塑燙依髮長為 NT$3,000／3,500／4,000；染髮依髮長 NT$1,700 起。漂髮退色、挑染與特殊設計需看髮況，由真人報價。完整項目請看頁面的「店內參考價目」。',
   hours: '店內不是 24 小時現場營業。我可以 24 小時接收需求；一般可約 05:00–23:30，臨時預約請至少提前 1 小時。其他時段也能提出，但需由設計師確認。',
   alice: '2號 Alice 擅長頭皮養護、剪、燙、染與整頭漂染，風格以居家好整理、簡單俐落及目標明確的個性造型為主，也接受新客。空檔與指定價格仍需本人確認。',
@@ -71,6 +72,7 @@ function addBubble(text, type) {
 }
 
 function classifyQuestion(text) {
+  if (/優惠|活動|套餐|特價|促銷/.test(text)) return 'promotion';
   if (/價|多少|費用|剪|燙|染|漂|護髮|頭皮/.test(text)) return 'price';
   if (/時間|營業|幾點|臨時|24/.test(text)) return 'hours';
   if (/tina|緹娜|7號/.test(text.toLowerCase())) return 'tina';

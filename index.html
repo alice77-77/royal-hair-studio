@@ -9,13 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <style>.stylists{align-items:start}.stylist-list{display:grid;gap:18px}</style>
+  <style>.stylists{align-items:start}.stylist-list{display:grid;gap:18px}.promotions{background:#e9dfd2}.promo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:38px}.promo-card{background:var(--paper);display:flex;flex-direction:column;overflow:hidden}.promo-card a{display:block;background:#d8c9b8}.promo-card img{width:100%;height:250px;object-fit:contain;display:block}.promo-card-body{padding:24px;display:flex;flex-direction:column;flex:1}.promo-card h3{font-size:21px}.promo-price{color:var(--clay-dark);font-size:18px;font-weight:700;margin:8px 0}.promo-card p{color:var(--muted);font-size:13px}.promo-card .button{margin-top:auto}.promo-notice{margin-top:20px;color:var(--muted);font-size:13px}@media(max-width:900px){.promo-grid{grid-template-columns:1fr}.promo-card img{height:auto;max-height:520px}}</style>
 </head>
 <body>
   <header class="site-header">
     <a class="logo" href="#top"><span>ROYAL</span>皇家造型</a>
     <nav aria-label="主要選單">
       <a href="#services">服務</a>
+      <a href="#promotions">優惠</a>
       <a href="#prices">價目</a>
       <a href="#stylists">設計師</a>
       <a href="#faq">常見問題</a>
@@ -44,6 +45,28 @@
       <div><strong>AI 小編 24 小時接收需求</strong><span>店內並非全天營業，實際時段需確認</span></div>
       <div><strong>一般可約 05:00–23:30</strong><span>臨時預約請至少提前 1 小時</span></div>
       <div><strong>羅東民權路 159 號</strong><span>鄰近羅東鎮公所立體停車場</span></div>
+    </section>
+
+    <section id="promotions" class="section promotions">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURRENT OFFERS</p><h2>目前優惠活動</h2></div>
+        <p class="price-note">活動採預約制；指定設計師、髮況、髮量及特殊技術是否加價，請先由店家確認。</p>
+      </div>
+      <div class="promo-grid">
+        <article class="promo-card">
+          <a href="promo-overview.jpg" target="_blank" rel="noreferrer"><img src="promo-overview.jpg" alt="皇家造型剪髮、洗髮、染髮與燙髮優惠總覽" loading="lazy"></a>
+          <div class="promo-card-body"><h3>不指定設計師優惠</h3><p class="promo-price">學生剪 NT$200｜成人剪 NT$300｜洗髮 NT$300</p><p>染髮套餐 NT$2,099 起；燙髮套餐 NT$3,099 起。套餐詳細內容與適用條件請先確認。</p><a class="button button-dark" href="#booking">提出活動預約</a></div>
+        </article>
+        <article class="promo-card">
+          <a href="promo-color-package.jpg" target="_blank" rel="noreferrer"><img src="promo-color-package.jpg" alt="皇家造型商業單色染髮套餐活動" loading="lazy"></a>
+          <div class="promo-card-body"><h3>商業單色染髮套餐</h3><p class="promo-price">短髮 NT$2,099｜肩上 NT$2,299｜肩下 NT$2,499｜及腰 NT$2,699</p><p>包含洗、剪、頭皮隔離、商業單色染髮與鉑金護髮。若需去色加收 NT$1,000；週一至週五預約限定。</p><a class="button button-dark" href="#booking">預約染髮活動</a></div>
+        </article>
+        <article class="promo-card">
+          <a href="promo-perm-package.jpg" target="_blank" rel="noreferrer"><img src="promo-perm-package.jpg" alt="皇家造型燙髮五重奏套餐活動" loading="lazy"></a>
+          <div class="promo-card-body"><h3>燙髮五重奏套餐</h3><p class="promo-price">肩上 NT$3,099｜肩下 NT$3,599｜長髮 NT$4,099</p><p>包含洗、剪、頭皮面膜、商業造型燙與鉑金柔順修護。髮量多或兩種燙髮技術酌收 NT$1,000；週一至週五預約限定。</p><a class="button button-dark" href="#booking">預約燙髮活動</a></div>
+        </article>
+      </div>
+      <p class="promo-notice">活動價格依現場海報建檔，實際適用資格、髮況與最終價格由設計師確認；活動如有調整，以店內最新公告為準。</p>
     </section>
 
     <section id="services" class="section services">
@@ -133,8 +156,8 @@
   <button class="assistant-fab assistant-trigger" type="button" aria-haspopup="dialog"><span>AI</span> 店務小編</button>
   <aside id="assistant" class="assistant" role="dialog" aria-modal="true" aria-labelledby="assistantTitle" aria-hidden="true">
     <div class="assistant-head"><div><p>24 小時接收需求</p><h2 id="assistantTitle">皇家 AI 店務小編</h2></div><button id="closeAssistant" type="button" aria-label="關閉 AI 店務小編">×</button></div>
-    <div id="chatLog" class="chat-log" aria-live="polite"><div class="bubble bot">您好🙂我可以先協助查詢價格、營業方式、Alice 或 Tina 的服務、訂金規則，或帶您開始預約。預約與最終報價仍由真人確認。</div></div>
-    <div class="quick-actions" aria-label="快速問題"><button data-question="price">查詢價格</button><button data-question="hours">營業與時段</button><button data-question="alice">介紹 Alice</button><button data-question="tina">介紹 Tina</button><button data-question="deposit">訂金規則</button><button data-question="booking">我要預約</button><button data-question="human">找真人</button></div>
+    <div id="chatLog" class="chat-log" aria-live="polite"><div class="bubble bot">您好🙂我可以先協助查詢目前優惠、價格、營業方式、Alice 或 Tina 的服務、訂金規則，或帶您開始預約。預約與最終報價仍由真人確認。</div></div>
+    <div class="quick-actions" aria-label="快速問題"><button data-question="promotion">目前優惠</button><button data-question="price">查詢價格</button><button data-question="hours">營業與時段</button><button data-question="alice">介紹 Alice</button><button data-question="tina">介紹 Tina</button><button data-question="deposit">訂金規則</button><button data-question="booking">我要預約</button><button data-question="human">找真人</button></div>
     <form id="chatForm" class="chat-form"><label class="sr-only" for="chatInput">輸入問題</label><input id="chatInput" autocomplete="off" placeholder="例如：染髮多少錢？"><button type="submit">送出</button></form>
   </aside>
   <div id="overlay" class="overlay"></div>
